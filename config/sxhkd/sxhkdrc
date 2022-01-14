@@ -1,0 +1,82 @@
+# use sh as the shell to exec commands (this is recommended cause I use fish)
+set -U SXHKD_SHELL sh
+
+# launcher (apps)
+super + d
+  rofi -show
+
+# ----
+# apps
+# ----
+
+# terminal
+super + Return
+  kitty
+
+# screenshot app
+super + Print
+  gnome-screenshot
+
+# browser
+super + a
+  firefox
+
+# editor
+super + e
+  code
+
+# file manager
+super + @space
+  kitty ranger
+
+# ------
+# system
+# ------
+
+# sxhkd reload
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# quit/restart bspwm
+super + alt + {q,r}
+	bspc {quit,wm -r}
+
+# lock the system
+super + shift + l
+  dm-tool lock
+
+# ----------
+# Workspaces
+# ----------
+
+# move current window to another workspace
+super + {_,shift + }{1-9,0}
+  bspc {desktop -f,node -d} '^{1-9,10}'paces 
+
+# focus the next/previous desktop in the current monitor
+super + {Page_Down, Page_Up}
+  bspc desktop -f {prev,next}
+
+# -----------------
+# Window Management
+# -----------------
+
+# change window state to floating or tiled
+super + Tab
+  bspc node -t {floating,tiled}
+
+# close window
+super + q
+  bspc node -{c,k}
+
+# change focus for next window
+alt + Tab
+  bspc node -f next.local.!hidden.window
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# resize a window
+super + ctrl + {Up,Down,Left,Right}
+  {bspc node -z top 10 10; bspc node -z bottom -10 -10, bspc node -z bottom 10 10; bspc node -z top -10 -10, bspc node -z left 10 10; bspc node -z right -10 -10, bspc node -z right 10 10; bspc node -z left -10 -10 }
