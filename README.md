@@ -10,7 +10,6 @@
   <li><strong>SHELL</strong>: Fish</li>
   <li><strong>Terminal</strong>: Kitty</li>
   <li><strong>File Manager</strong>: Ranger</li>
-  <li><strong>Editor</strong>: Visual Studio Code</li>
 </ul>
 
 ## Preview
