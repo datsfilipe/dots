@@ -1,16 +1,21 @@
 # Personal dots
 
-<span style="text-decoration: underline">Just started using bspwm + fish. Also very soon I will start using neovim.</span>
+<span style="text-decoration: underline">Paradise > Nord.</span>
 
 ## Description
 
-<ul align="left">
-  <li><strong>WM</strong>: <a href="https://github.com/baskerville/bspwm">Bspwm</a></li>
-  <li><strong>OS</strong>: Arch Linux</li>
-  <li><strong>SHELL</strong>: Fish</li>
-  <li><strong>Terminal</strong>: Kitty</li>
-  <li><strong>File Manager</strong>: Ranger</li>
-</ul>
+- WM: BSPWM
+- Terminal: Kitty
+- Fetch: [catfetch](https://github.com/N3k0Ch4n/Fetch/blob/main/catfetch.sh)
+- Bar: Polybar
+- Coloscheme: [Paradise](https://www.reddit.com/r/unixporn/comments/rs1fjs/oc_paradise_colorscheme/)
+- Shell: Fish
+- Terminal Font: JetBrains Mono
+- System Font: Overpass
+- PDF Viewer: Zathura
+- Neovim setup with -> [Conscious](https://github.com/Manas140/Conscious)
+
+The image opened in second screenshot: [here](https://www.pixiv.net/en/artworks/76922680).
 
 ## Preview
 
