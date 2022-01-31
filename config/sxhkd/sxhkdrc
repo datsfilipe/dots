@@ -3,7 +3,11 @@ set -U SXHKD_SHELL sh
 
 # launcher (apps)
 super + d
-  rofi -show
+  appmenu
+
+# powermenu
+super + m
+  powermenu
 
 # ----
 # apps
@@ -14,8 +18,8 @@ super + Return
   kitty
 
 # screenshot app
-super + Print
-  gnome-screenshot
+Print
+  flameshot gui
 
 # browser
 super + a
@@ -23,7 +27,8 @@ super + a
 
 # editor
 super + e
-  code
+  kitty -e vim
+# vim is neovim here!
 
 # file manager
 super + @space
@@ -38,7 +43,7 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # quit/restart bspwm
-super + alt + {q,r}
+super + shift + {q,r}
 	bspc {quit,wm -r}
 
 # lock the system
@@ -66,7 +71,7 @@ super + Tab
   bspc node -t {floating,tiled}
 
 # close window
-super + q
+super + {_,shift + }q
   bspc node -{c,k}
 
 # change focus for next window

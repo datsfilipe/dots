@@ -1,1 +1,2 @@
 add_newline = false
+command_timeout = 15000

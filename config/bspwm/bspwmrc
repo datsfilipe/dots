@@ -1,27 +1,28 @@
 #! /bin/sh
 
-# autostart
-killall sxhkd; pgrep -x sxhkd > /dev/null || sxhkd &
-killall picom; picom &
+# - autostart
+picom -b &
+killall sxhkd; sxhkd &
 killall dunst; dunst &
 xrandr --output HDMI-1 --brightness 0.4 &
-feh --bg-fill $HOME/Pictures/07.jpg &
+feh --bg-fill $HOME/Pictures/14.jpg &
 xsetroot -cursor_name left_ptr &
 $HOME/.config/polybar/launch.sh &
-OUT=$(echo "$@" | sed "s:///:////:g" | sed "s/%20/ /g") &
-kitty -T "Ranger File Manager" -x ranger "$OUT" &
 setxkbmap br
 
-# variables
+# - variables
 alias bc='bspc config'
 alias br='bspc rule'
 
-# workspaces
-bspc monitor -d 1 2 3 4 5 6
+#Workspaces
+bspc monitor HDMI-1 -d 1 2 3 4 5 6
 
-# others
+#Others
 bc border_width 0
 bc window_gap 10
-bc split_ratio 0.54
+bc split_ratio 0.52
 bc borderless_monocle true
 bc gapless_monocle false
+
+#rules
+br -a Zathura state=tiled
