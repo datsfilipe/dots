@@ -20,6 +20,4 @@
 
 ## Credits
 
-I took the whole config from <a href="https://github.com/Manas140/dotfiles">here</a> and started editing. A bunch of things stays like in his config so thanks. 
-<br>
-I was inspired by <a href="https://www.reddit.com/r/unixporn/comments/rplhg7/bspwm_neovim_is_pretty_cool/">this</a> and <a href="https://www.reddit.com/r/unixporn/comments/s2extx/yabai_emacs_and_my_favorite_emacs_bootloader/">this</a>.
+- Inspired / took some stuff from: [here](https://www.reddit.com/r/unixporn/comments/sdfpj7/bspwm_trying_new_colorscheme/), [here](https://www.reddit.com/r/unixporn/comments/qhhbrc/bspwm_the_gardeners_love/) and [here](https://www.reddit.com/r/unixporn/comments/sak598/yabai_catppuccin_is_taking_over_and_i_love_it/).
