@@ -1,0 +1,9 @@
+[Added Associations]
+text/plain=visual-studio-code.desktop;
+text/html=visual-studio-code.desktop;
+text/markdown=md.obsidian.Obsidian.desktop;
+
+[Default Applications]
+text/plain=nvim.desktop
+text/html=nvim.desktop;
+
