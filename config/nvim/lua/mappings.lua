@@ -26,32 +26,31 @@ end
 -- Normal Map
 nmap("<TAB>", ":tabnext")
 nmap("<S-TAB>", ":tabprev")
-nmap("hs", ":split")
-nmap("vs", ":vs")
-nmap("<leader>v", ":vs +terminal | startinsert")
-nmap("<leader>h", ":split +terminal | startinsert")
-nmap("<leader>t", ":tabnew")
+nmap("<C-H>", ":split")
+nmap("<C-S-v>", ":vs")
+nmap("<C-v>", ":vs +terminal | startinsert")
+nmap("<C-h>", ":split +terminal | startinsert")
+nmap("<C-t>", ":tabnew")
 
-nmap("<leader>q", ":q")
-nmap("<leader>s", ":w")
+nmap("<C-q>", ":q")
+nmap("<C-s>", ":w")
 
-nmap("<leader>z", ":u")
-nmap("<leader>r", ":redo")
+nmap("<C-z>", ":u")
+nmap("<C-r>", ":redo")
 
 -- Minimal toggle
-nmap("<leader>m", ":lua minimal()")
+nmap("<C-m>", ":lua minimal()")
 
 -- Telescope
-nmap("<leader>/", ":lua require('Comment.api').toggle_current_linewise()")
-nmap("<leader><space>", ":Telescope")
-nmap("ff", ":Telescope find_files")
-nmap("fb", ":Telescope buffers")
+nmap("<C-space>", ":Telescope")
+nmap("<C-f>", ":Telescope find_files")
+nmap("<C-b>", ":Telescope buffers")
 
 -- NvimTree
-nmap("<leader>e", ":NvimTreeToggle")
-nmap("<leader>n", ":NvimTreeFocus")
+nmap("<C-e>", ":NvimTreeToggle")
+nmap("<C-n>", ":NvimTreeFocus")
 
 -- Visual Map
-vmap("<leader>/", ":lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())")
-vmap("<leader>d", ":d")
-vmap("<leader>y", ":y")
+vmap("<C-/>", ":lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())")
+vmap("<C-d>", ":d")
+vmap("<C-y>", ":y")
