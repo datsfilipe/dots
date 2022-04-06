@@ -1,0 +1,32 @@
+# GRUB2 gfxmenu Linux theme
+# VIRTUAVERSE
+
+# Global Property
+title-text: ""
+desktop-image: "background.png"
+desktop-color: "#000000"
+terminal-font: "Terminus Regular 14"
+terminal-box: "terminal_box_*.png"
+terminal-left: "0"
+terminal-top: "0"
+terminal-width: "100%"
+terminal-height: "100%"
+terminal-border: "0"
+
+# Show the boot menu
++ boot_menu {
+  left = 39%
+  top = 37%
+  width = 34%
+  height = 27%
+  item_font = "Victor's Pixel Font Regular 32"
+  item_color = "#ffffff"
+  selected_item_color = "#e6d38a"
+  icon_width = 0
+  icon_height = 0
+  item_icon_space = 0
+  item_height = 36
+  item_padding = 5
+  item_spacing = 10
+}
+
